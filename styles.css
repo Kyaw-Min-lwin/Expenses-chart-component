@@ -1,0 +1,57 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    background-color: hsl(27, 66%, 92%);
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+}
+
+#balance-section {
+    background-color: hsl(10, 79%, 65%);
+    width: 40%;
+    border-radius: 15px;
+    padding: 25px 20px;
+    position: relative;
+    margin-bottom: 2em;
+}
+
+#balance-section p:first-child {
+    font-size: 1rem;
+    margin-bottom: 0.4em;
+    font-weight: 400;
+    color: hsl(28, 10%, 53%);
+}
+
+#balance-section p:nth-child(2) {
+    color: white;
+    font-size: 1.7rem;
+    font-weight: 700;
+}
+
+#logo {
+    max-width: 100%;
+    display: block;
+    position: absolute;
+    right: 20px;
+    bottom: 30px;
+}
+
+#spending-section {
+    width: 40%;
+    background-color: hsl(33, 100%, 98%);
+    border-radius: 15px;
+}
+
+h1 {
+    color: hsl(25, 47%, 15%);
+}
