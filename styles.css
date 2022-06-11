@@ -22,14 +22,14 @@ body {
     border-radius: 15px;
     padding: 25px 20px;
     position: relative;
-    margin-bottom: 2em;
+    margin: 2em 0;
 }
 
 #balance-section p:first-child {
     font-size: 1rem;
     margin-bottom: 0.4em;
     font-weight: 400;
-    color: hsl(28, 10%, 53%);
+    color: hsl(27, 66%, 92%)
 }
 
 #balance-section p:nth-child(2) {
@@ -50,8 +50,97 @@ body {
     width: 40%;
     background-color: hsl(33, 100%, 98%);
     border-radius: 15px;
+    padding: 30px 25px;
 }
 
 h1 {
     color: hsl(25, 47%, 15%);
+    font-weight: 700;
+    font-size: 2.2rem;
+    margin-bottom: 1.5em;
+}
+
+.day-container p:last-of-type {
+    color: hsl(28, 10%, 53%);
+    font-weight: 400;
+    text-align: center;
+    /* background-color: brown; */
+}
+
+.week {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    /* width: 6.25%; */
+    /* background-color: aqua; */
+}
+
+.day-container {
+    width: 10%;
+    /* background-color: blue; */
+}
+
+.day-container div {
+    background-color: hsl(10, 79%, 65%);
+    border-radius: 5px;
+    cursor: pointer;
+    /* width: 10%; */
+}
+
+.day-container div:hover {
+    background-color: hsla(10, 79%, 65%, 0.6);
+}
+
+.monday {
+    height: 4em;
+}
+
+.tuesday {
+    height: 7em;
+}
+
+div.wednesday {
+    height: 10em;
+    background-color: hsl(186, 34%, 60%);
+    position: relative;
+}
+
+div.wednesday:hover {
+    background-color: hsla(186, 34%, 60%, 0.6);
+}
+
+.thursday {
+    height: 6em;
+    position: relative;
+}
+
+
+
+.friday {
+    height: 5em;
+}
+
+.saturday {
+    height: 9em;
+}
+
+.sunday {
+    height: 5em;
+}
+
+div.day-container p.box1, div.day-container p.box2 {
+    background-color: hsl(25, 47%, 15%);
+    border-radius: 5px;
+    color: hsl(27, 66%, 92%);
+    font-weight: 700;
+    padding: 0.4em 0em;
+    text-align: center;
+    width: 150%;
+    position: absolute;
+    top: -45px;
+    left: -25%;
+}
+
+.hover {
+    display: none;
 }
