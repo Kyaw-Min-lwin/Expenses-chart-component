@@ -18,11 +18,12 @@ body {
 
 #balance-section {
     background-color: hsl(10, 79%, 65%);
-    width: 40%;
+    width: 90%;
+    max-width: 500px;
     border-radius: 15px;
     padding: 25px 20px;
     position: relative;
-    margin: 2em 0;
+    margin: 4em 0 2em;
 }
 
 #balance-section p:first-child {
@@ -47,10 +48,12 @@ body {
 }
 
 #spending-section {
-    width: 40%;
+    width: 90%;
+    max-width: 500px;
     background-color: hsl(33, 100%, 98%);
     border-radius: 15px;
-    padding: 30px 25px;
+    padding: 30px 25px 20px;
+    margin-bottom: 5em;
 }
 
 h1 {
@@ -64,27 +67,25 @@ h1 {
     color: hsl(28, 10%, 53%);
     font-weight: 400;
     text-align: center;
-    /* background-color: brown; */
 }
 
 .week {
     display: flex;
     justify-content: space-evenly;
     align-items: flex-end;
-    /* width: 6.25%; */
-    /* background-color: aqua; */
+    padding-bottom: 1.5em;
+    border-bottom: 1px solid hsl(27, 66%, 92%);
+    margin-bottom: 1.5em;
 }
 
 .day-container {
     width: 10%;
-    /* background-color: blue; */
 }
 
 .day-container div {
     background-color: hsl(10, 79%, 65%);
     border-radius: 5px;
     cursor: pointer;
-    /* width: 10%; */
 }
 
 .day-container div:hover {
@@ -114,8 +115,6 @@ div.wednesday:hover {
     position: relative;
 }
 
-
-
 .friday {
     height: 5em;
 }
@@ -143,4 +142,62 @@ div.day-container p.box1, div.day-container p.box2 {
 
 .hover {
     display: none;
+}
+
+.flex-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1em;
+    /* background-color: aquamarine; */
+}
+
+.this-month p:first-child {
+    color: hsl(28, 10%, 53%);
+    font-size: 1.2rem;
+}
+
+.this-month p:last-child {
+    color: hsl(25, 47%, 15%);
+    font-weight: 700;
+    font-size: 2.8rem;
+}
+
+.last-month p:first-child {
+    color: hsl(25, 47%, 15%);
+    font-weight: 700;
+    margin-top: 1em;
+    text-align: end;
+}
+
+.last-month p:last-child {
+    color: hsl(28, 10%, 53%);
+}
+
+@media (max-width:720px) {
+    h1 {
+        font-size: 1.5rem;
+        padding-left: 25px;
+    }
+
+    #spending-section {
+        padding: 30px 0 20px;
+    }
+
+    .this-month p:first-child {
+        font-size: 0.9rem;
+    }
+
+    .this-month p:last-child {
+        font-size: 1.8rem;
+    }
+
+    .last-month p:first-child {
+        font-size: 1rem;
+        margin: 0;
+    }
+
+    .last-month p:last-child {
+        font-size: 0.9rem;
+    }
 }
