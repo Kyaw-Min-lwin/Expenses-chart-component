@@ -86,10 +86,19 @@ h1 {
     background-color: hsl(10, 79%, 65%);
     border-radius: 5px;
     cursor: pointer;
+    position: relative;
 }
 
 .day-container div:hover {
     background-color: hsla(10, 79%, 65%, 0.6);
+}
+
+div.today {
+    background-color: hsl(186, 34%, 60%);
+}
+
+div.today:hover {
+    background-color: hsla(186, 34%, 60%, 0.6);
 }
 
 .monday {
@@ -102,17 +111,14 @@ h1 {
 
 div.wednesday {
     height: 10em;
-    background-color: hsl(186, 34%, 60%);
-    position: relative;
 }
 
-div.wednesday:hover {
+/* div.wednesday:hover {
     background-color: hsla(186, 34%, 60%, 0.6);
-}
+} */
 
 .thursday {
     height: 6em;
-    position: relative;
 }
 
 .friday {
@@ -127,10 +133,10 @@ div.wednesday:hover {
     height: 5em;
 }
 
-div.day-container p.box1, div.day-container p.box2 {
+div.day-container p.box1, div.day-container p.box2, div.day-container p.box3, div.day-container p.box4, div.day-container p.box5, div.day-container p.box6, div.day-container p.box7 {
     background-color: hsl(25, 47%, 15%);
     border-radius: 5px;
-    color: hsl(27, 66%, 92%);
+    color: hsl(33, 100%, 98%);
     font-weight: 700;
     padding: 0.4em 0em;
     text-align: center;
@@ -178,6 +184,7 @@ div.day-container p.box1, div.day-container p.box2 {
     h1 {
         font-size: 1.5rem;
         padding-left: 25px;
+        margin-bottom: 2em;
     }
 
     #spending-section {
@@ -198,6 +205,14 @@ div.day-container p.box1, div.day-container p.box2 {
     }
 
     .last-month p:last-child {
+        font-size: 0.9rem;
+    }
+
+    div.day-container p.box1, div.day-container p.box2 {
+        width: 180%;
+    }
+
+    div.day-container p {
         font-size: 0.9rem;
     }
 }
